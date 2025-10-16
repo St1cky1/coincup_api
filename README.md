@@ -89,15 +89,15 @@ coincup.api/
 ### Структура Asset
 ```go
 type Asset struct {
-    ID            string `json:"id"`
-    Rank          string `json:"rank"`
-    Symbol        string `json:"symbol"`
-    Name          string `json:"name"`
-    Supply        string `json:"supply"`
-    MaxSupply     string `json:"maxSupply"`
-    MarketCapUsd  string `json:"marketCapUsd"`
-    VolumeUsd24Hr string `json:"volumeUsd24Hr"`
-    PriceUsd      string `json:"priceUsd"`
+    ID            string `json:"id"`           // Уникальный идентификатор
+    Rank          string `json:"rank"`         // Ранг по капитализации
+    Symbol        string `json:"symbol"`       // Символ (BTC, ETH)
+    Name          string `json:"name"`         // Название
+    Supply        string `json:"supply"`       // Текущее предложение
+    MaxSupply     string `json:"maxSupply"`    // Максимальное предложение
+    MarketCapUsd  string `json:"marketCapUsd"` // Рыночная капитализация
+    VolumeUsd24Hr string `json:"volumeUsd24Hr"`// Объем торгов (24ч)
+    PriceUsd      string `json:"priceUsd"`     // Цена в USD
 }
 ```
 
